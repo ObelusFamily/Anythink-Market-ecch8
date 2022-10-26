@@ -58,7 +58,7 @@ class Item extends React.Component {
             </div>
 
             <div className="col-6">
-              <h1>{this.props.item.title}</h1>
+              <h2>{this.props.item.title}</h2>
               <ItemMeta item={this.props.item} canModify={canModify} />
               <div dangerouslySetInnerHTML={markup}></div>
               {this.props.item.tagList.map((tag) => {
